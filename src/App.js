@@ -5,7 +5,7 @@ const App = () => {
   const [inputText, setInputText] = useState('');
   const [isPalindrome, setIsPalindrome] = useState(true);
 
-  function checkIsPalindrome(str) {
+  const checkIsPalindrome = (str) => {
     const midpoint = Math.floor(str.length / 2);
     console.log(midpoint);
     for (let i = 0; i < midpoint; i++)
